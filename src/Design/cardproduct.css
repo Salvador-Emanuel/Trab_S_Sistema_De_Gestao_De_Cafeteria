@@ -1,0 +1,26 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.card{
+    -fx-background-color: #fff;
+}
+
+.shadow{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5), 5,0,0,0);
+}
+.btn{
+    -fx-background-color: linear-gradient(to bottom right, #098c53, #246861);
+    -fx-cursor:hand;
+    -fx-text-fill: #fff;
+}
+
+.btn:hover{
+    -fx-background-color: linear-gradient(to bottom right, #0fb565, #399a8f);
+}
+
+.spinner {
+    -fx-background-color: #fff;
+    -fx-border-color: #000;
+    -fx-border-width: .8px;
+}

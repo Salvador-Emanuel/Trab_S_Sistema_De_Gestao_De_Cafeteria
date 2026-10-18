@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Trab_S_Sistema_De_Gestao_De_Cafeteria.jnlp">
+  <information>
+    <title>Trab_S_Sistema_De_Gestao_De_Cafeteria</title>
+    <vendor>Elga</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Trab_S_Sistema_De_Gestao_De_Cafeteria.jar" size="30734761" download="eager" />
+    <jar href="lib\commons-beanutils-1.9.4.jar" size="246918" download="eager" />
+    <jar href="lib\commons-collections-3.2.2.jar" size="588337" download="eager" />
+    <jar href="lib\commons-collections4-4.4.jar" size="751914" download="eager" />
+    <jar href="lib\commons-digester-2.1.jar" size="196768" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\fontawesomefx-8.2.jar" size="180341" download="eager" />
+    <jar href="lib\itext-2.1.7.jar" size="1130070" download="eager" />
+    <jar href="lib\jasperreports-6.18.1.jar" size="5634011" download="eager" />
+    <jar href="lib\jasperreports-fonts-6.18.1.jar" size="2480416" download="eager" />
+    <jar href="lib\js-hive-datasource-1.0.4.jar" size="22295" download="eager" />
+    <jar href="lib\mondrian-3.2.0-13661-JS.jar" size="2823019" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\ojdbc6-12.1.0.2.0.jar" size="3692096" download="eager" />
+    <jar href="lib\rex-0.8.1.jar" size="806733" download="eager" />
+    <jar href="lib\sqleonardo-2009.03.rc1.jar" size="631060" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Trab_S_Sistema_De_Gestao_De_Cafeteria" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="sistema_de_gestao_de_cafeteria.Sistema_De_Gestao_De_Cafeteria"  name="Trab_S_Sistema_De_Gestao_De_Cafeteria" />
+  <update check="always"/>
+</jnlp>

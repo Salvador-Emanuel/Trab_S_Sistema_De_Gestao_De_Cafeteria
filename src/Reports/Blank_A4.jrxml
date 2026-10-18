@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5fe79475-1354-4fc6-a3f9-0c3ca6dcf984">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[c2lzY2FmZS5jdXN0b21lciBBUyAsMjIsMjgsMDViNTNjNzEtZWRiNC00NmNmLThkMzUtMTU0MDI2
+NDAyZDFjO3Npc2NhZmUucmVjZWlwdCBBUyAsMjY4LDY4LGE2MmRmZDY4LWRlMzMtNDJmZi05ZjBm
+LWJiZmE2NzM2Y2M4ZDs=]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Siscafe"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT siscafe.receipt.id,
+	siscafe.customer.id,
+	siscafe.customer.customer_id,
+	siscafe.customer.prod_id,
+	siscafe.customer.prod_name,
+	siscafe.customer.type,
+	siscafe.customer.quantity,
+	siscafe.customer.price,
+	siscafe.customer.date,
+	siscafe.customer.em_username,
+	siscafe.customer.image,
+	siscafe.receipt.customer_id,
+	siscafe.receipt.total,
+	siscafe.receipt.date,
+	siscafe.receipt.em_username
+FROM siscafe.receipt
+	INNER JOIN siscafe.customer ON 
+	 siscafe.customer.id = siscafe.receipt.id]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipt"/>
+	</field>
+	<field name="COLUMN_2" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="customer_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="customer_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="customer_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="prod_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="prod_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="prod_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="prod_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="prod_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="prod_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="type" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="type"/>
+		<property name="com.jaspersoft.studio.field.label" value="type"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="quantity" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="quantity"/>
+		<property name="com.jaspersoft.studio.field.label" value="quantity"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="price" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="price"/>
+		<property name="com.jaspersoft.studio.field.label" value="price"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="date"/>
+		<property name="com.jaspersoft.studio.field.label" value="date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="em_username" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="em_username"/>
+		<property name="com.jaspersoft.studio.field.label" value="em_username"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="image" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="image"/>
+		<property name="com.jaspersoft.studio.field.label" value="image"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="COLUMN_12" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="customer_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="customer_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipt"/>
+	</field>
+	<field name="total" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="total"/>
+		<property name="com.jaspersoft.studio.field.label" value="total"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipt"/>
+	</field>
+	<field name="COLUMN_14" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="date"/>
+		<property name="com.jaspersoft.studio.field.label" value="date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipt"/>
+	</field>
+	<field name="COLUMN_15" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="em_username"/>
+		<property name="com.jaspersoft.studio.field.label" value="em_username"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipt"/>
+	</field>
+	<group name="id">
+		<groupExpression><![CDATA[$F{id}]]></groupExpression>
+	</group>
+	<group name="COLUMN_2">
+		<groupExpression><![CDATA[$F{COLUMN_2}]]></groupExpression>
+	</group>
+	<group name="customer_id">
+		<groupExpression><![CDATA[$F{customer_id}]]></groupExpression>
+	</group>
+	<group name="prod_id">
+		<groupExpression><![CDATA[$F{prod_id}]]></groupExpression>
+	</group>
+	<group name="prod_name">
+		<groupExpression><![CDATA[$F{prod_name}]]></groupExpression>
+	</group>
+	<group name="type">
+		<groupExpression><![CDATA[$F{type}]]></groupExpression>
+	</group>
+	<group name="quantity">
+		<groupExpression><![CDATA[$F{quantity}]]></groupExpression>
+	</group>
+	<group name="price">
+		<groupExpression><![CDATA[$F{price}]]></groupExpression>
+	</group>
+	<group name="date">
+		<groupExpression><![CDATA[$F{date}]]></groupExpression>
+	</group>
+	<group name="em_username">
+		<groupExpression><![CDATA[$F{em_username}]]></groupExpression>
+	</group>
+	<group name="image">
+		<groupExpression><![CDATA[$F{image}]]></groupExpression>
+	</group>
+	<group name="COLUMN_12">
+		<groupExpression><![CDATA[$F{COLUMN_12}]]></groupExpression>
+	</group>
+	<group name="total">
+		<groupExpression><![CDATA[$F{total}]]></groupExpression>
+	</group>
+	<group name="COLUMN_14">
+		<groupExpression><![CDATA[$F{COLUMN_14}]]></groupExpression>
+	</group>
+	<group name="COLUMN_15">
+		<groupExpression><![CDATA[$F{COLUMN_15}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

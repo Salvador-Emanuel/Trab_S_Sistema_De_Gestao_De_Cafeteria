@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="prod_form" prefHeight="180.0" prefWidth="230.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CardProductController">
+    <stylesheets>
+        <URL value="@/Design/cardproduct.css" />
+    </stylesheets>
+   <children>
+      <VBox layoutX="65.0" layoutY="-10.0" prefHeight="190.0" prefWidth="230.0" stylesheets="@../Design/cardproduct.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="21.0" prefWidth="230.0">
+               <children>
+                  <Label fx:id="prod_name" prefHeight="21.0" prefWidth="115.0" text="Frango Grelhado">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="prod_price" alignment="TOP_RIGHT" prefHeight="21.0" prefWidth="80.0" text="0.0mz">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="111.0" prefWidth="230.0">
+               <children>
+                  <ImageView fx:id="prod_imageView" fitHeight="108.0" fitWidth="210.0" layoutX="10.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0" />
+               </children>
+            </AnchorPane>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Spinner fx:id="prod_spinner" prefHeight="25.0" prefWidth="110.0" stylesheets="@../Design/cardproduct.css">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Spinner>
+                  <Button fx:id="prod_addBtn" mnemonicParsing="false" onAction="#addBtn" styleClass="btn" stylesheets="@../Design/cardproduct.css" text="Adicionar" />
+               </children>
+            </HBox>
+         </children>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </VBox>
+   </children>
+</AnchorPane>
